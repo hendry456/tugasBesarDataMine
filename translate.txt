@@ -1,0 +1,19 @@
+fixed acidity = keasaman tetap
+volatile acidity =keasaman tidak tetap
+citric acid = asam sitrat
+residual sugar = sisa gula
+chloride = klorida
+free sulfur dioxide = sulfur oksida bebas
+total sulfur dioxide = total sulfur oksida
+density = massa jenis
+ph = ph
+sulphate = sulfat
+alcohol = alkohol
+quality = kualitas
+
+
+4 = sangat tidak baik
+5 = tidak baik
+6 = sedang
+7 = baik
+8 = sangat baik

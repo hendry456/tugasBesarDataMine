@@ -1,0 +1,16 @@
+setwd("D:/TugasBesarDataMine")
+getwd()
+dataset <- read.csv("winequality-white.csv", sep= ";")
+install.packages("C50")
+install.packages("printr")
+library(C50)
+library(printr)
+dataset["quality"]<-lapply(dataset["quality"],factor)
+str(dataset)
+model <- C5.0(quality ~., data=dataset)
+model
+summary(model)
+plot(model)
+datatesting<-dataset[,1:11]
+predictions <- predict(model, datatesting)
+table(predictions, dataset$quality)
